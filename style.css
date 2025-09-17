@@ -165,3 +165,23 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+.logo {
+    width: 80px;
+    height:auto;
+    margin: 20px;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+}
+.type {
+  display: flex;
+  gap: 20px; 
+}
+.link-nav:hover {
+  border-top: 3px solid #0065FC; 
+  color: #0065FC; 
+}

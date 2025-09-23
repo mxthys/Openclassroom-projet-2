@@ -420,9 +420,130 @@ section {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+/****** activités ***********/
+    .activities-img{
+    height:15vh;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .navbar {
+        height: 79px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .nav-link {
+        display: flex;
+        gap: 68px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #logo {
+        padding:30px;
+    }
+    
+    .nav-link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .nav-link a {
+        text-align: center;
+    }
+    .nav-link {
+        border-bottom:#F2F2F2 2px solid;
+        padding: 0 0 15px 0;
+    }
+    .act-heb-links:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+  
+}
+
+    /****** hébergements ***********/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    
+    .card-container-herbergements {
+        grid-template-columns: 1fr;
+        width: 100%;
+
+    }
+
+    .card-container-herbergements a { 
+        width: 100%;
+    }
+
+    .activities-card-container {
+    grid-template-columns: 1fr;
+    }
+
+    /****** footer ***********/
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    /****** populaire ***********/
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+
+
+/****** searchbox ***********/
+    .filters {
+    flex-direction: column;
+    align-items: initial;
+    }
+
+    .filters-ul {
+    padding: 0;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    /*****************/
+        .research-box {
+        width: 100%; /* adapte la box au parent */
+    }
+
+    #button-research {
+        display: none;  /* on cache le bouton Rechercher */
+    }
+
+    #icon-glass {
+        display: inline-flex; /* on montre l'icône */
+        justify-content: center;
+        align-items: center;
+        width: 49px;          /* carré pour l'icône */
+        height: 49px;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0 15px 15px 0;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .research-bar {
+        flex: 1;              /* input prend tout l'espace restant */
+    }
+
+
+
+
+
+
+
 }

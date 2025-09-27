@@ -14,23 +14,23 @@
 }
 
 body {
+    
     display: flex;
     justify-content: center;
     margin: auto;
     max-width: 1440px;
     min-width: 320px;
-    
+    box-sizing: border-box;
 }
-.main{
+.main {
     padding: 0 50px 0 50px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
-    padding: 0 50px 0 50px
+    
 }
 
 a {
@@ -78,13 +78,17 @@ a {
 #logo {
   height: 19px;
   width: auto;
-  padding: 30px 50px 30px 0;
+  padding: 30px 50px;
 
 }
 .nav-link{
     display: flex;
     gap:68px;
-    
+    padding: 0 50px;
+
+}
+.nav-link a{
+    padding:10px;
 }
 
 .act-heb-links:hover {
@@ -100,6 +104,13 @@ a {
     display: flex;
 }
 
+
+.title-h2{
+    font-size: 22px;
+    margin: 0 0 8px 0;
+
+}
+
 .research-bar {
     width:195px;
     font-weight: bold;
@@ -107,6 +118,7 @@ a {
     text-align:center;
     border: solid #F2F2F2 1px;
 }
+
 .research-bar::placeholder {
   color: black;      
 }
@@ -140,7 +152,9 @@ a {
     display: flex;
     gap: 15px;
     align-items: center;
-}
+    height: 50px;
+    
+}   
 
 .filters h3 {
   font-size: 24px;
@@ -157,10 +171,13 @@ a {
     border: solid 2px #e2e2e2;
     border-radius: 25px;
     gap:10px;
+    font-size:17px;
 
     
 }
-
+.filters-button p {
+    font-size:17px;
+}
 .filters-ul {
   display: inline-flex;
   flex-direction: row;
@@ -249,12 +266,16 @@ a {
 }
 
 .heberge-card {
+    display:flex;
+    flex-direction:column;
+    gap:4px;
     background-color: white;
     border-radius: 20px;
     padding: 0 0 15px 0;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    
 }
+
+
 
 
 .heberge-img {
@@ -280,20 +301,29 @@ a {
     margin:0;
 }
 
+.heberge-text h3 {
+    font-size:16px;
+}
+.card-rating {
+    height: 13.25px;
+}
+.heberge-text  {
+    font-size:14px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
     padding: 30px;
 }
 .populaires-cards {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
 }
 .populaires-title {
     display: flex;
@@ -338,6 +368,12 @@ a {
 /****** Activités ***********/
 .activités {
     padding: 30px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.activités h2 {
+    margin: 0;
 }
 .activities-card-container {
     display:grid;
@@ -345,6 +381,9 @@ a {
     grid-gap:30px;
 }
 .activities-card {
+    display:flex;
+    flex-direction: column;
+    gap:0;
     border-radius: 20px;
     box-shadow: 0px 3px 15px -9px black;
 }
@@ -353,6 +392,7 @@ a {
   margin: 0;  
   padding: 20px 19px; 
   font-weight: bold;
+  font-size:16px;
 }
 
 .activities-img{
@@ -381,19 +421,53 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding: 0 50px;
 }
 .recherche {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    main { 
+        gap:35px;
+    }
+    .filters-button {
+    padding: 4px 19px;
+    font-size: 16px;
+    box-sizing: border-box;
+    }
+    .filters {
+        flex-direction: column;
+        align-items: initial;
+        height:91px;
+        gap:20px;
+    
+    }
+    .filters h3 {
+        font-size:18px;
+    }
+    .filters-button {
+        padding:0 16px;
+    }
+    .filters-button p {
+        font-size:16px;
+    }
+    .filters h3 {
+        margin:0;
+    }
+    .filters-ul {
+        margin:0;
+        width:668px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
+        gap:50px;
     }
 
     .hebergements {
@@ -402,7 +476,7 @@ main {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        gap:20px;
     }
 
     .populaires-cards {
@@ -425,13 +499,21 @@ main {
 
 /****** activités ***********/
     .activities-img{
-        height:15vh;
+        height:200px;
     }
-
+    .activities-card {
+        height:270px;
+    }
+    footer {
+        margin-top:35px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    main {
+        padding:0;
+    }
     body {
         width:375px;
     }
@@ -483,9 +565,7 @@ main {
     }
     
     /*******section recherche**********/
-    .recherche-texte h2{
-        margin: 0 0 8px 0;
-    }
+    
     
     
     /*******filter**********/
@@ -493,6 +573,7 @@ main {
     flex-direction: column;
     align-items: initial;
     gap:20px;
+    height:161px;
     }
     .filters h3 {
         font-size: 18px;
@@ -635,6 +716,7 @@ main {
     flex-direction: column;
     }
     .activities-img {
+        width: 315px;
         height: 141px;
     }
     .activities-card h3 {

@@ -22,8 +22,16 @@ body {
     min-width: 320px;
     box-sizing: border-box;
 }
-.main {
-    padding: 0 50px 0 50px;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 50px;
+}
+.recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .main-container {
@@ -156,9 +164,8 @@ a {
     
 }   
 
-.filters h3 {
-  font-size: 24px;
-  display: inline;
+.title-h3 {
+  font-size: 18px;
 }
 
 .filters-button{
@@ -273,6 +280,8 @@ a {
     border-radius: 20px;
     padding: 0 0 15px 0;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 207.25px;
+    box-sizing: border-box;
 }
 
 
@@ -286,16 +295,21 @@ a {
     border-radius: 20px 20px 0 0;
     border: 5px solid transparent;
     box-sizing: border-box;
-    
+    min-height: 124px;
+    max-height: 124px;
 
 }
 
 .heberge-text {
     display: flex;
+    justify-content: center;
+    height: 64.25px;
     flex-direction:column;
+    
     gap:8px;
     padding: 0 15px;
     font-size:16px;
+    
 }
 .heberge-text h3, p {
     margin:0;
@@ -393,6 +407,12 @@ a {
   padding: 20px 19px; 
   font-weight: bold;
   font-size:16px;
+  height: 59px;
+  box-sizing:border-box;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+
 }
 
 .activities-img{
@@ -417,18 +437,7 @@ footer {
 
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    padding: 0 50px;
-}
-.recherche {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    
-}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -503,6 +512,10 @@ main {
     }
     .activities-card {
         height:270px;
+    }
+    .activities-card h3 {
+    height: 70px;
+    box-sizing: border-box;
     }
     footer {
         margin-top:35px;

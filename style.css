@@ -427,6 +427,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color:#F2F2F2;
+    margin: 0 50px;
 }
 
 .footer-text{
@@ -745,7 +746,7 @@ footer {
         grid-template-columns: 1fr;
         gap:50px;
         padding:30px;
-        margin-top:35px;
+        margin:35px 0 0 0;
     }
     
     .footer-text{

@@ -447,6 +447,7 @@ footer {
     main { 
         gap:35px;
     }
+/****** filters ***********/
     .filters-button {
     padding: 4px 19px;
     font-size: 16px;
@@ -475,6 +476,7 @@ footer {
         margin:0;
         width:668px;
     }
+/****** hebergements ***********/
     .hebergements-and-populaires {
         flex-direction: column;
         gap:50px;
@@ -483,7 +485,7 @@ footer {
     .hebergements {
         width: 100%;
     }
-
+/****** populaires ***********/
     .populaires {
         width: 100%;
         gap:20px;

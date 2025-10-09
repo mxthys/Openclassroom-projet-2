@@ -28,6 +28,11 @@ body h1 {
 }
 
 body h2 {
+    font-size: 22px;
+    margin:0;
+}
+
+body h3 {
     font-size: 16px;
     margin:0;
 }
@@ -170,7 +175,7 @@ a {
     
 }   
 
-.title-h2 {
+.title-h3 {
   font-size: 18px;
 }
 .li-p{
@@ -269,7 +274,7 @@ a {
     padding: 30px;
 }
 
-.hebergement h2 {
+.hebergement h3 {
     font-size:16px;
 }
 
@@ -414,7 +419,7 @@ a {
     box-shadow: 0px 3px 15px -9px black;
 }
 
-.activities-card h2 {
+.activities-card h3 {
   margin: 0;  
   padding: 20px 19px; 
   font-weight: bold;
@@ -528,7 +533,7 @@ footer {
     .activities-card {
         height:270px;
     }
-    .activities-card h2 {
+    .activities-card h3 {
     height: 70px;
     box-sizing: border-box;
     }
@@ -604,7 +609,7 @@ footer {
     gap:20px;
     height:161px;
     }
-    .filters h2 {
+    .filters h3 {
         font-size: 18px;
         display: inline;
     }
@@ -734,7 +739,7 @@ footer {
         gap: 30px;
         margin-bottom: 30px;
     }
-    .activities h2 {
+    .activities h3 {
         height:30px;
         font-size: 22px;
         margin:0;
@@ -754,7 +759,7 @@ footer {
         width: 315px;
         height: 141px;
     }
-    .activities-card h2 {
+    .activities-card h3 {
     margin: 0;
     padding: 20px 19px;
     font-size: 16px;
